@@ -1,0 +1,121 @@
+.register {
+    width: 80vw;
+    height: 80vh;
+    margin: 20px 0;
+    min-height: 450px;
+    background-color: #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px #ddd;
+    display: flex;
+    gap: 15px;
+}
+
+.log-in,
+.sign-up {
+    margin: 10px 0 10px 10px;
+    padding: 10px;
+    border: 3px solid #555;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.log-in {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.register-title {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.register-label {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.register-input {
+    font-size: 24px;
+    width: 150px;
+    flex-grow: 1;
+}
+
+.register-input:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.register-btn {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.register-btn:hover {
+    transform: scale(1.1);
+}
+
+.error-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.register-error {
+    color: #f55;
+    font-size: 22px;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .register {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 0;
+    }
+
+    .sign-up,
+    .log-in {
+        width: calc(100% - 50px);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .register {
+        padding: 5px;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: calc(100vw - 10px);
+        min-height: calc(100vh - 10px);
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .register-title {
+        font-size: 30px;
+    }
+
+    .log-in {
+        margin-top: 0;
+    }
+}
